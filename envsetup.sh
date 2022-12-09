@@ -766,13 +766,13 @@ function lunch()
         # if we can't find a product, try to grab it off the ArrowOS GitHub
         T=$(gettop)
         cd $T > /dev/null
-        vendor/arrow/build/tools/roomservice.py $product
+        vendor/kenvyra/build/tools/roomservice.py $product
         cd - > /dev/null
         check_product $product
     else
         T=$(gettop)
         cd $T > /dev/null
-        vendor/arrow/build/tools/roomservice.py $product true
+        vendor/kenvyra/build/tools/roomservice.py $product true
         cd - > /dev/null
     fi
 
@@ -2026,5 +2026,5 @@ export ANDROID_BUILD_TOP=$(gettop)
 
 function repopick() {
     T=$(gettop)
-    $T/vendor/arrow/build/tools/repopick.py $@
+    $T/vendor/kenvyra/build/tools/repopick.py $@
 }

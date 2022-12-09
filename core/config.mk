@@ -357,7 +357,7 @@ FIND_LEAVES_EXCLUDES := $(addprefix --prune=, $(SCAN_EXCLUDE_DIRS) .repo .git)
 
 -include vendor/extra/BoardConfigExtra.mk
 ifneq ($(ARROW_BUILD),)
-include vendor/arrow/config/BoardConfigArrow.mk
+include vendor/kenvyra/config/BoardConfigArrow.mk
 endif
 
 # The build system exposes several variables for where to find the kernel
