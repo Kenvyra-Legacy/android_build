@@ -1271,10 +1271,10 @@ dont_bother_goals := out product-graph
 include $(BUILD_SYSTEM)/android_soong_config_vars.mk
 
 ifneq ($(KENVYRA_BUILD),)
-ifneq ($(wildcard device/arrow/sepolicy/common/sepolicy.mk),)
+ifneq ($(wildcard device/kenvyra/sepolicy/common/sepolicy.mk),)
 ## We need to be sure the global selinux policies are included
 ## last, to avoid accidental resetting by device configs
-$(eval include device/arrow/sepolicy/common/sepolicy.mk)
+$(eval include device/kenvyra/sepolicy/common/sepolicy.mk)
 endif
 endif
 
