@@ -6273,13 +6273,13 @@ $(INTERNAL_OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) $(OTA_FROM_TARGET_
 $(call declare-1p-container,$(INTERNAL_OTA_PACKAGE_TARGET),)
 $(call declare-container-license-deps,$(INTERNAL_OTA_PACKAGE_TARGET),$(BUILT_TARGET_FILES_PACKAGE) $(OTA_FROM_TARGET_FILES) $(INTERNAL_OTATOOLS_FILES),$(PRODUCT_OUT)/:/)
 
-ARROW_TARGET_PACKAGE := $(PRODUCT_OUT)/$(ARROW_VERSION).zip
+KENVYRA_TARGET_PACKAGE := $(PRODUCT_OUT)/$(KENVYRA_VERSION).zip
 
 .PHONY: otapackage bacon
 otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
 bacon: otapackage
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(ARROW_TARGET_PACKAGE)
-	$(hide) $(MD5SUM) $(ARROW_TARGET_PACKAGE) > $(ARROW_TARGET_PACKAGE).md5sum
+	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(KENVYRA_TARGET_PACKAGE)
+	$(hide) $(MD5SUM) $(KENVYRA_TARGET_PACKAGE) > $(KENVYRA_TARGET_PACKAGE).md5sum
 	echo -e "========================================="
 	echo -e ""
 	echo -e "                 \033[1;34m''\033[0m                  "
@@ -6303,7 +6303,7 @@ bacon: otapackage
 	echo -e ""
 	echo -e "========================================="
 	echo -e ""
-	@echo "**Package completed"**: $(ARROW_TARGET_PACKAGE)"
+	@echo "**Package completed"**: $(KENVYRA_TARGET_PACKAGE)"
 
 ifeq ($(BOARD_BUILD_RETROFIT_DYNAMIC_PARTITIONS_OTA_PACKAGE),true)
 name := $(product_name)-ota-retrofit-$(FILE_NAME_TAG)
