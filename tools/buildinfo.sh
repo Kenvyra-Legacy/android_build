@@ -58,6 +58,6 @@ if [ -n "$BUILD_THUMBPRINT" ] ; then
   echo "ro.build.thumbprint=$BUILD_THUMBPRINT"
 fi
 
-echo "ro.kenvyra.device=$ARROW_DEVICE"
+echo "ro.kenvyra.device=$KENVYRA_DEVICE"
 
 echo "# end build properties"
