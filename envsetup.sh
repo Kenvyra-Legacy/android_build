@@ -763,7 +763,7 @@ function lunch()
 
     if ! check_product $product
     then
-        # if we can't find a product, try to grab it off the ArrowOS GitHub
+        # if we can't find a product, try to grab it off the Kenvyra GitHub
         T=$(gettop)
         cd $T > /dev/null
         vendor/kenvyra/build/tools/roomservice.py $product

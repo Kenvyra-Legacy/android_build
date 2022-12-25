@@ -228,24 +228,24 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   script.Print("=================================================");
   script.Print("");
-  script.Print("                     ''                  ");
-  script.Print("               `````.oy.```````          ");
-  script.Print("            ```````:dMMh.````````        ");
-  script.Print("          ```````.sMMMMMy.`````````      ");
-  script.Print("        ```````./mMMMMMMMy.``````````    ");
-  script.Print("       ```````-yMMMMMMMMMMy.``````````   ");
-  script.Print("       `````./mMMNNNMMMMMMMy.``````````  ");
-  script.Print("      `````-ymmhMMMMMMhNMMMMs.`````````  ");
-  script.Print("      ````./M..```````.-odMMMs.````````  ");
-  script.Print("      ```````````````````./hMMs.```````  ");
-  script.Print("       ````````````````````./dMs.``````  ");
-  script.Print("        ``````````````````````.+ms`````  ");
-  script.Print("         ```````````````````````-yo```   ");
-  script.Print("          ``````````````````````...d`    ");
-  script.Print("            ````````````````````` `` .   ");
-  script.Print("               ````````````````          ");
+  script.Print("                       .                ")
+  script.Print("                  .o$*°    .o*   d      ")
+  script.Print("              .o$$$$     o$P    d$      ")
+  script.Print("            o$*dP$$P    d**$o.  $b d    ")
+  script.Print("          d$° $Pd$$b  °?$$$$*°*$$$d$    ")
+  script.Print("         $P  dP $$°$   d$$$ d$o.$$?$ob  ")
+  script.Print("        d$   db.$b  $. d$$$bd$***$$$$$  ")
+  script.Print("        $P   ?$$ °$. ?$$°$$$$$bo. *$$$b ")
+  script.Print("        ?b   d*$.  *oo$°?o$b°?.*$$o?$$$ ")
+  script.Print("         $.o*  °$b  d$o   *$o $*o?b$ $  ")
+  script.Print("          $b     °$dP  ?    $**b ? $?   ")
+  script.Print("           *$o   o*°$.      ?b P°?b bb  ")
+  script.Print("             °$od°   ?b      $    $?$   ")
+  script.Print("               °?o    P      *    P $   ")
+  script.Print("                 °$.         P      d   ")
+  script.Print("                   ?                    ")
   script.Print("");
-  script.Print("                    ArrowOS");
+  script.Print("                    Kenvyra");
   script.Print("");
   script.Print("=================================================");
   script.Print(" Android version  : %s"%(android_version));
